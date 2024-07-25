@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgba(200, 198, 198, 0.418);
+    overflow-x: hidden;
+}
+
+header #hamburger{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    background-color: darkred;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 2px 2px rgb(139, 139, 139);
+}
+
+header a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.Me{
+    margin-top: 150px;
+    display: block;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }  /* Start from 100% off-screen to the left */
+    to { transform: translateX(0); }
+}
+
+.Me img{
+    height: 250px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+.text{
+    background-color: rgb(15, 15, 15);
+    /* background-color: rgb(129, 128, 127); */
+    height: 200px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Me .text h1{
+    font-size: 40px;
+    background-image: url(https://images.pexels.com/photos/391522/pexels-photo-391522.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text button{
+    width: 80px;
+    height: 40px;
+    /* padding: 5px; */
+    border-radius: 2px;
+    border: none;
+    /* background-color: rgb(229, 154, 56); */
+    background-color: rgb(105, 104, 104);
+}
+
+.text button:hover{
+    transition: 0.8s ease-in;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.text #download{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.text #download:hover{
+    transition: 0.5s ease-in-out;
+    color: rgb(192, 2, 2);
+}
+
+.text p{
+    color: white;
+    margin-top: 5px;
+}
+
+.text i{
+    color: white;
+    margin-top: 5px;
+}
+
+
+.about{
+    margin-top:150px;
+    animation: fadeIn 7s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+.about .abouttext{
+    margin-top: 140px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    line-height: 35px;
+}
+
+.about .aboutimage img{
+    margin-top: 140px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.abouttext h1{
+    color: darkred;
+    text-align: center;
+    font-size: 40px;
+}
+
+.abouttext span{
+    color: black;
+    text-transform: capitalize;
+}
+
+.about img{
+    float: right;
+    height: 400px;
+    margin-right: 5px;
+}
+
+
+.contact{
+    margin-top: 900px;
+    display: flex;
+    height: 430px;
+}
+
+.formbg{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    /* z-index: 999; */
+}
+
+.formbg img{
+    width: 100%;
+    filter: blur(5px);
+}
+
+/* .contact .image img{
+    height: 300px;
+} */
+
+.contact .form{
+    /* background-color: burlywood; */
+    background-color: rgb(216, 216, 216);
+    height: 400px;
+    padding: 30px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    margin-top: 100px;
+    box-shadow: 0px 5px 15px #dfdfdf;
+}
+
+.contact h1{
+    text-align: center;
+    font-size: 40px;
+    color: darkred;
+}
+
+.contact span{
+    color: black;
+}
+
+.contact input{
+    width: 300px;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact textarea{
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.contact button{
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    margin-left: 40px;
+}
+
+.contact button:hover{
+    transition: 0.4s ease-in;
+    background-color: rgb(220, 5, 5);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 480px){
+    *{
+        overflow-x: hidden;
+    }
+    
+    body{
+        padding-bottom: 140px;
+        overflow-x: hidden;
+    }
+  
+    header {
+        width: 100%;
+        height: 50px;
+    }
+
+    header #hamburger{
+        display: inline-flex;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    header a{
+        display: none;
+    }
+
+    .Me .text{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .Me img{
+        display: none;
+    }
+
+
+    .about{
+        margin: 0;
+        display: flex;
+        animation: none;
+    }
+
+    .abouttext{
+        text-align: center;
+    }
+
+    .about .aboutimage img{
+        display: none;
+        /* margin: 0 auto;
+        display: block;
+        height: 220px;
+        margin-top: 290px; */
+    }
+
+    .contact{
+        margin: 0;
+        padding-top: 30px;
+    }
+
+    .contact .formbg{
+        display: none;
+    }
+
+    .contact .form{
+        /* display: grid;
+        place-items: center; */
+       /* display: flex;
+       flex-direction: column;
+       margin-left: 50px; */
+       animation: fadeIn 3s ease-in-out; 
+    }
+
+    .contact .form input{
+        width: 200px;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    }
+
+      @media (min-width: 768px) and (max-width: 1024px){
+        *{
+            overflow-x: hidden;
+        }
+
+        .Me .text{
+            height: 250px;
+            
+        }
+
+        .Me .image img{
+            position: absolute;
+        }
+
+        .about{
+            margin: 0;
+        }
+
+        .aboutimage{
+           position: absolute;
+           top: 110%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        }
+
+        .contact .formbg{
+            display: none;
+        }
+
+        .contact .form{
+            position: absolute;
+            top: 170%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+      }
+            
